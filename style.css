@@ -34,6 +34,7 @@ body {
 .container {
   position: fixed;
   height: 15vh;
+  max-height: 100px;
   padding: 20px 0px;
   width: 100%;
   display: flex;
@@ -76,30 +77,12 @@ nav a:hover {
 .logo {
   width: 250px;
   height: auto;
+  
 }
 .logo img {
   width: 200px;
 }
 
-.btn {
-  padding: 15px 15px;
-  background-color: #471273;
-  color: #ffffff;
-  font-size: 20px;
-  border-radius: 30px;
-  border-style: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  transition: ease-in-out 0.5s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  font-size: 20px;
-  font-weight: 500;
-  color: #18002b;
-  background-color: #ffffffa8;
-  transform: scale(1.05);
-}
 
 
 .menu-toggle-input {
@@ -136,9 +119,10 @@ z-index: 1100;
   align-items: center;
   justify-content: center;
   gap: 20px;
+ 
 }
 
-/* about me section */
+/* main section */
 
 .top-content {
   display: flex;
@@ -147,19 +131,19 @@ z-index: 1100;
   gap: 25px;
   flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 20px;
+
 }
 
 .main-title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: #fff;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 600;
   text-shadow: 1px 1px 25px rgb(196, 109, 255);
 }
 .description {
-  padding-top: 80px;
+  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,13 +152,13 @@ z-index: 1100;
 
 .description-text {
   width: 60%;
-
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   text-shadow: 1px 1px 20px rgb(160, 160, 160);
 }
+
 
 /* مركز الاحداث  hero section   */
 
@@ -187,7 +171,7 @@ z-index: 1100;
   padding: 1% 2%;
   margin: auto;
   gap: 20px;
-  background-color: #00000063;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
 
 .languges-logo img {
@@ -196,10 +180,12 @@ z-index: 1100;
   border-radius: 5px;
 }
 
+/* the introduction about my work */
+
 .introduction {
   display: flex;
   flex-direction: column;
-  padding: 6% 0%;
+  padding: 6% 2%;
   width: 100%;
   height: auto;
   align-items: center;
@@ -212,9 +198,8 @@ z-index: 1100;
   text-shadow: 1px 4px 30px rgb(238, 185, 255), 2px 2px 20px rgb(223, 191, 225);
   padding: 15px 20px;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
-  margin-top: 10px;
   transition: ease-in-out 0.3s;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -225,7 +210,7 @@ z-index: 1100;
   text-align: center;
   font-size: 20px;
   max-width: 800px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 20px auto;
   line-height: 1.7;
   font-weight: 500;
   font-family: "poppins";
@@ -237,13 +222,35 @@ z-index: 1100;
   border-radius: 12px;
 }
 
+
+.btn {
+  padding: 15px 15px;
+  background-color: #471273;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  border-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  font-size: 20px;
+  font-weight: 500;
+  color: #18002b;
+  background-color: #ffffffa8;
+  transform: scale(1.05);
+}
+
 /* projects container معرض الاعمال */
 
 .project {
   padding: 30px;
   display: flex;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: auto;
   flex-direction: row;
   flex-wrap: wrap;
@@ -313,6 +320,7 @@ z-index: 1100;
   margin: 0 auto;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  text-decoration: none;
 }
 
 .project-btn:hover {
@@ -357,10 +365,10 @@ z-index: 1100;
   margin-top: 50px;
   width: 48%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 5px;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.752);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.752);
 }
 .slide-set.active {
   opacity: 1;
@@ -376,6 +384,8 @@ z-index: 1100;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  width: 100%;
+  
 }
 
 .contact-form {
@@ -475,6 +485,7 @@ z-index: 1100;
   width: 50px;
   height: auto;
   transition: 0.5s ease-in-out;
+  object-fit: contain;
 }
 
 .social-row img:hover {
@@ -527,28 +538,10 @@ z-index: 1100;
   transform: scale(1.1);
 }
 
-.back-to-top.show {
-  opacity: 1;
-}
 
 
-.back-to-top.show {
-  opacity: 1;
-  pointer-events: auto;
-
-}
 
 
-.back-to-top:hover {
-
-  transform: scale(1.1);
-  background-color: #f1f1f1;
-  color: #471273;
-  border: 2px solid #471273;
-  
- 
-
-}
 
 @media (max-width: 768px) {
 
@@ -615,5 +608,117 @@ z-index: 1100;
   opacity: 1;
   transform: translateY(0);
 }
+.main-title {
+
+font-size: 35px;
+
+}
+
+.description-text {
+
+  font-size: 13px;
+  width: 85%;
+  
+}
+
+.intro-title {
+
+font-size: 32px;
+
+}
+
+.intro-text {
+
+  font-size: 13px;
+}
+
+.btn {
+
+  padding: 11px 11px;
+  font-size: 15px;
+}
+
+.project-photo-container {
+
+width: 100%;
+
+}
+.slide-set {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.slide-img {
+
+ display: none;
+}
+.slide-img:first-child {
+  display: block;
+  width: 80%;
+}
+
+.back-to-top {
+
+  bottom: 22%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+ text-align: center;
+ line-height: 30px;
+  border-radius: 19px;
+}
+.contact-section{
+
+padding: 30px;
+height: 65vh;
+
+
+}
+
+.my-form input {
+
+max-width: 300px;
+height: 50px;
+}
+
+
+.my-form textarea {
+
+  max-width: 300px;
+  height: 100px;
+}
+
+.contact-title {
+  font-size: 25px
+}
+.contact-text {
+
+  font-size: 15px ;
+  max-width: 300px;
+  line-height: 1.2;
+}
+.my-form button {
+
+font-size: 15px;
+padding: 10px 10px;
+max-width: 70px;
+}
+
+.social-row {
+  margin: auto;
+}
+
+.social-row img {
+
+width: 35px;
+
+
+}
+
+.social-text{
+
+ display: none;
+}
+
   
 }
