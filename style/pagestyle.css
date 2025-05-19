@@ -5,10 +5,11 @@
   box-sizing: border-box;
   
 }
-@import url(https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 
 body{
-
 overflow-x: hidden;
   background: linear-gradient(135deg, #fffdf8 0%, #fafffffa 50%, #f0f0f0 100%);
   backdrop-filter: blur(2px);
@@ -339,4 +340,152 @@ border-radius: 30px;
   font-family: "popppins";
   text-shadow: 1px 1px 20px rgb(169, 40, 224);
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  /* الهيدر */
+  .container {
+    
+    padding: 10px ;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .menu-toggle {
+
+    display: block;
+  }
+
+  .main-menu ul {
+
+    
+    flex-direction: column;
+    background-color: #18002b;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    height: 100vw;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+    z-index: 1000;
+
+
+  }
+
+  .menu-toggle-input:checked+.menu-toggle+.main-menu ul {
+
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    padding: 20px;
+
+  }
+  .main-menu li {
+
+
+    border-left: none;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: solid 1px white;
+   
+  }
+  .main-menu ul li {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-toggle-input:checked + .menu-toggle + .main-menu ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+.main-title {
+
+font-size: 35px;
+
+}
+  /* قسم Main */
+  .main {
+   
+    height: 90vh;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .main-text {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .main-links {
+    
+    gap: 10px;
+  }
+
+  .btn {
+
+font-size: 16px;
+padding: 15px 10px ;
+
+  }
+
+  /* قسم .my-project */
+  .my-project {
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px auto;
+    width: 100%;
+    
+  }
+
+  .project-container {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 30px;
+  }
+
+  .project-text {
+    font-size: 16px;
+  }
+
+  .project-form input[type="text"],
+  .project-form input[type="email"] {
+    width: 100%;
+  }
+
+  /* شعارات اللغات */
+  .languges-logo {
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* الفوتر */
+  .my-social {
+    padding: 5px 5px;
+    gap: 20px;
+  }
+
+  .project-social-row {
+    margin: 0;
+  }
+
+  .social-text {
+   display: none;
+  }
 }
