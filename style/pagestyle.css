@@ -218,7 +218,7 @@ margin-bottom: 10px;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
   border-radius: 8px;
   min-height: 100vh;
   display: flex;
@@ -294,6 +294,7 @@ border-radius: 30px;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  
 }
 
 .project-form input[type="submit"]:hover {
@@ -322,6 +323,7 @@ border-radius: 30px;
   gap: 10px;
   margin: auto;
   padding: 10px 0;
+  
 }
 
 .project-social-row img {
@@ -329,11 +331,15 @@ border-radius: 30px;
   height: auto;
   transition: 0.5s ease-in-out;
   object-fit: contain;
+  
+
+  
 }
 
 .project-social-row img:hover {
   transform: scale(1.2);
   border-radius: 10px;
+  
 }
 
 .social-text {
@@ -484,6 +490,13 @@ padding: 15px 10px ;
 
   .project-social-row {
     margin: 0;
+  }
+
+  .project-social-row img {
+width: 40px;
+
+
+
   }
 
   .social-text {
