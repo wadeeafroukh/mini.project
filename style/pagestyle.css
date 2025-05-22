@@ -10,7 +10,7 @@
 
 
 body{
-overflow-x: hidden;
+
   background: linear-gradient(135deg, #fffdf8 0%, #fafffffa 50%, #f0f0f0 100%);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -63,7 +63,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 35px;
   color: #ffffff;
   padding: 15px 15px;
   font-weight: 600;
