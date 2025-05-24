@@ -26,7 +26,7 @@ body {
 .main-header {
   width: 100%;
   height: 590px;
-  background-image: url('/public/images/project6.jpg'); 
+  background-image: url('../projectimages/project6.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

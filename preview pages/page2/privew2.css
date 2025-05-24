@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
 /* genral*/
 * {
   margin: 0;
@@ -5,8 +8,6 @@
   box-sizing: border-box;
   
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
 body{
@@ -18,7 +19,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(163, 163, 163);
-  font-family: sans-serif;
+  font-family: 'poppins', sans-serif;
   overflow-x: hidden;
  
   
@@ -105,7 +106,7 @@ z-index: 1100;
 
 .main {
 
-background-image: url(../public/images/blob-scene-haikei\ \(1\).png);
+background-image: url(../../public/images/blob-scene-haikei\ \(1\).png);
 display: flex;
 background-color: rgba(0, 0, 0, 0.8);
 background-attachment: fixed;
@@ -163,6 +164,9 @@ margin-bottom: 10px;
 
 
 }
+
+/* main button */
+
 .btn {
   padding: 15px 15px;
   background-color: #471273;
@@ -177,7 +181,7 @@ margin-bottom: 10px;
 }
 
 .btn:hover {
-  font-size: 20px;
+  
   font-weight: 500;
   color: #18002b;
   background-color: #ffffffa8;
@@ -212,7 +216,7 @@ margin-bottom: 10px;
 
 
 .my-project {
-  background-image: url("../public/images/p-2.jpg");
+  background-image: url("../../projectimages/project2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -268,25 +272,19 @@ margin-top: 20px;
 .project-form input[type="text"],
 .project-form input[type="email"] {
   display: flex;
-  padding: 10px;
+  padding: 15px;
   margin: 10px 5px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 18px;
   width: calc(100% - 20px);
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  border-bottom: solid 5px rgb(158, 66, 255);
 }
 
-.project-form input[type="submit"]{
-
-width: 90px;
-padding: 15px 15px;
-font-size: 18px;
-border-radius: 30px;
-
-}
+/* project button */
 
 .project-form input[type="submit"] {
   background-color: #471273;
@@ -294,6 +292,11 @@ border-radius: 30px;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  width: 170px;
+  padding: 15px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin-top: 15px;
   
 }
 
@@ -392,49 +395,63 @@ border-radius: 30px;
     opacity: 1;
     pointer-events: auto;
     padding: 20px;
-
+    
   }
   .main-menu li {
-
-
+    
+    
     border-left: none;
     padding: 10px 0;
     text-align: center;
     border-bottom: solid 1px white;
-   
+    
   }
   .main-menu ul li {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu-toggle-input:checked + .menu-toggle + .main-menu ul li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .main-title {
+    
+    font-size: 35px;
+    
+  }
 
-.menu-toggle-input:checked + .menu-toggle + .main-menu ul li {
-  opacity: 1;
-  transform: translateY(0);
-}
-.main-title {
 
-font-size: 35px;
+  /* شعارات اللغات */
+  .languges-logo {
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
 
-}
+
+
   /* قسم Main */
   .main {
    
     height: 90vh;
-    padding: 20px 10px;
+    border-radius: 0;
+    padding: 6% 4%;
     align-items: center;
     justify-content: center;
+    
   }
 
   .main-title {
     font-size: 32px;
     text-align: center;
+   
   }
 
   .main-text {
     font-size: 18px;
-    padding: 0 10px;
+   
   }
 
   .main-links {
@@ -452,35 +469,38 @@ padding: 15px 10px ;
   /* قسم .my-project */
   .my-project {
     flex-direction: column;
-    padding: 20px;
-    margin: 50px auto;
+    padding: 10px;
+    margin: 2px auto;
+    border-radius: 0;
     width: 100%;
+    
     
   }
 
   .project-container {
-    padding: 20px;
+    padding: 4% 6%;
+    
+    
   }
 
   .project-title {
     font-size: 30px;
+     
   }
 
   .project-text {
     font-size: 16px;
+    
   }
 
   .project-form input[type="text"],
   .project-form input[type="email"] {
     width: 100%;
   }
-
-  /* شعارات اللغات */
-  .languges-logo {
-    gap: 10px;
-    height: auto;
-    padding: 10px;
+  .btn{
+    margin-top: 20px;
   }
+
 
   /* الفوتر */
   .my-social {
