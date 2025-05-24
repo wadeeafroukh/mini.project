@@ -206,11 +206,11 @@ margin-bottom: 10px;
 
     width: 100%;
     max-width: 1600px;
-    height: 90vh;
+    height: 100vh;
     margin: auto;
     display: flex;
     gap: 50px;
-    padding-top: 100px;
+   
 }
 
 .project-form {
