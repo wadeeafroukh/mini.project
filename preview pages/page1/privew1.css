@@ -314,10 +314,10 @@ object-fit: cover;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 20px;
   height: auto;
   min-height: 80px;
-  margin: auto;
+  margin-top: 40px;
   
  
 }
@@ -328,7 +328,7 @@ object-fit: cover;
   align-items: center;
   gap: 10px;
   margin: auto;
-  padding: 2% 0;
+  padding: 10px 0;
   
 }
 
@@ -343,14 +343,14 @@ object-fit: cover;
 }
 
 .project-social-row img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   border-radius: 10px;
   
 }
 
 .social-text {
   color: #000000;
-  font-family: "poppins";
+  font-family: "popppins";
   text-shadow: 1px 1px 20px rgb(169, 40, 224);
   margin-bottom: 5px;
 }
