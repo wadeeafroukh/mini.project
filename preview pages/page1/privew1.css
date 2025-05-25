@@ -436,7 +436,7 @@ text-align: center;
 .btn{
 
 font-size: 20px;
-padding: 10px 12px;
+padding: 10px 10px;
 
 
 }
@@ -452,6 +452,7 @@ margin: 0;
 .project-form {
 
 text-align: center;
+margin: auto;
 padding: 0 6%;
 
 
