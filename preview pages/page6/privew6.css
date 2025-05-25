@@ -164,10 +164,10 @@ margin-bottom: 10px;
 
 }
 .btn {
-    padding: 15px 15px;
+    padding: 10px 10px;
   background-color: #471273;
   color: #ffffff;
-  font-size: 26px;
+  font-size: 20px;
   border-radius: 30px;
   border-style: none;
   font-family: 'poppins', sans-serif;
@@ -456,8 +456,8 @@ text-align: center;
 }
 .btn{
 
-font-size: 20px;
-padding: 15px 10px;
+font-size: 18px;
+padding: 10px 10px;
 
 
 }
