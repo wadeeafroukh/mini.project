@@ -462,6 +462,8 @@ padding: 10px 10px;
 
 }
 
+/* project section */
+
 .my-project {
 
 flex-direction: column;
@@ -534,6 +536,8 @@ font-size: 18px;
 .project-social-row img {
   width: 45px;
 }
+
+/* footer linls and social */
 
 .social-text {
 

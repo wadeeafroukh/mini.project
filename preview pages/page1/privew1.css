@@ -420,6 +420,10 @@ object-fit: cover;
   opacity: 1;
   transform: translateY(0);
 }
+
+/* main section */
+
+
 .main-title {
 
 
@@ -440,6 +444,8 @@ padding: 10px 10px;
 
 
 }
+
+/* project section */
 
 .my-project {
 
@@ -476,6 +482,8 @@ text-align: center;
 
 }
 
+/* table and inbuts */
+
 input[type="text"],
 input[type="email"] {
   height: 45px;
@@ -493,31 +501,26 @@ font-size: 18px;
 
 
 
-.project-social-row img {
-  width: 45px;
-}
+/* الفوتر  footer */
 
-.social-text {
+  .my-social {
+    padding: 5px 5px;
+    gap: 20px;
+  }
 
-display: none;
+  .project-social-row {
+    margin: 0;
+  }
 
-}
+  .project-social-row img {
+width: 40px;
 
-.my-social {
-  
-  padding: 5px 10px;
-  min-height: 60px;
 
-  
- 
-}
 
-.project-social-row {
-  
-  gap: 5px;
-  padding: 5px 0;
-  
-}
+  }
 
+  .social-text {
+   display: none;
+  }
 
 }
