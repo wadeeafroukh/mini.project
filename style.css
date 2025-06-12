@@ -364,7 +364,7 @@ z-index: 1100;
 .slide-img {
   margin-top: 50px;
   width: 48%;
-  height: 700px;
+  height: auto;
   border-radius: 5px;
   object-fit: cover;
   border-radius: 5px;
