@@ -225,7 +225,7 @@ height: 100vh;
 .project-container {
   width: 100%;
   height: 600px;
-  background-image: url(../../projectimages/project6.jpg); 
+  background-image: url(../projectimages/project6.jpg); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
