@@ -106,7 +106,7 @@ z-index: 1100;
 
 .main {
 
-background-image: url(../../public/images/blob-scene-haikei\ \(1\).png);
+background-image: url(../public/images/blob-scene-haikei\ \(1\).png);
 display: flex;
 background-color: rgba(0, 0, 0, 0.8);
 background-attachment: fixed;
