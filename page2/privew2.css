@@ -216,7 +216,7 @@ margin-bottom: 10px;
 
 
 .my-project {
-  background-image: url("../../projectimages/project2.jpg");
+  background-image: url("../projectimages/project2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
